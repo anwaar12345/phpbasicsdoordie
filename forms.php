@@ -6,11 +6,12 @@
     <title><?php echo "PHP FORMS"; ?></title>
 </head>
 <body>
-<?php if(isset($_GET['submit'])){
+<?php 
+error_reporting(0);
+if(isset($_GET['submit'])){
 $name = $_GET['name'];
 $option = $_GET['opt'];
-$check = isset($_GET['checkbox']) ? $_GET['checkbox'] : '';
-echo !empty($check) ? "<script>alert($check);</script>" : '';
+$check = $_GET['checkbox'];
 
 }else{
     $name = '';
@@ -26,5 +27,9 @@ echo !empty($check) ? "<script>alert($check);</script>" : '';
     <input type="checkbox" value="Agree" <?php echo !empty($check) ? 'checked' : '' ; ?>  name="checkbox">
     <button type="submit" name="submit">Submit</button>
     </form>
+    <?php 
+    echo $name;
+    
+    ?>
 </body>
 </html>
