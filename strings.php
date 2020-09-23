@@ -25,4 +25,36 @@ $int = (int)$float;
 var_dump($int);
  echo $int;
 // print_r($arr);
+
+$is_num = "ddd";
+echo is_numeric($is_num);
+
+$str_get = "Syed";
+echo "<br>".$str_get[0];
+
+switch($str_get){
+case "Syed":
+    echo $str_get;
+break;
+default:
+echo "Not Matched";
+break;
+}
+
+echo "<hr>";
+
+echo "Vowels <br>";
+ 
+$vows = ['a','e','i','0','u'];
+foreach($vows as $key => $vow)
+{
+switch($vow){
+    case $vow = 'a':
+        echo $vow;
+    break;
+    case $vow = "e";
+    echo $vow;
+    break;
+}
+}
 ?>
