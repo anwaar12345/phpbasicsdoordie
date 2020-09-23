@@ -1,6 +1,6 @@
 <?php
 
-$str = 'aws/is/a/cloud/Platform/diagnostics/s space';
+$str = 'aws/is/a/cloud/Platform/diagnostics/s   space';
 // $arr = explode('/',$str);
 // echo str_word_count($str);
 // echo "<br/> string Built In php Functions <br/>";
@@ -14,9 +14,15 @@ if(strpos($str,'diagnostics') != null){
    echo "<br>".substr_count($str,' ');
 }
 
-$str_get = substr($str,strpos($str,' ') + 1);
+$str_get = substr($str,strpos($str,' '));
 echo '<br>'.$str_get;
+echo substr_count($str,' ').'<br>';
 
+$float = 2.22;
 
+$int = (int)$float;
+
+var_dump($int);
+ echo $int;
 // print_r($arr);
 ?>
