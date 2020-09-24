@@ -33,8 +33,15 @@ array_shift($arrr);
 echo "</pre>";
 echo "<hr><pre>";
 var_dump($arrr);
-echo "</pre>"
+echo "</pre>";
+echo "<hr>";
+$ser = ['Apple','Nokia','Samsung','Huawei'];
+if(in_array('Apple',$ser)){
+    echo array_search("Apple",$ser);
+}
 
-
-
+$strS = 'shah/diagnostics';
+echo substr_count($strS,'h');
+$ae = substr($strS,stripos($strS,'diagnostics'));
+echo $ae;
 ?>
